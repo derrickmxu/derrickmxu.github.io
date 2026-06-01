@@ -116,6 +116,7 @@ h1 span {
   background: var(--bg-hover);
   border-color: #8e8e93;
   color: var(--text);
+  text-decoration: none;
 }
 
 /* Profile Photo */
@@ -199,9 +200,18 @@ h3 {
 }
 
 .wip li {
+  position: relative;
+  padding-left: 1.25rem;
   margin-bottom: 0.85rem;
   font-size: 0.95rem;
   color: #222222;
+}
+
+.wip li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--text-muted);
 }
 
 .wip li strong {
