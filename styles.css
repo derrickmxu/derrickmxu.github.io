@@ -256,6 +256,12 @@ footer p {
 
   .social-links {
     justify-content: center;
+    align-items: center;
+  }
+
+  .email-row,
+  .links-row {
+    justify-content: center;
   }
 
   .intro p {
