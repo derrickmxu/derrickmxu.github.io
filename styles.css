@@ -74,14 +74,25 @@ h1 span {
 }
 
 /* Social & Action Links */
-.social-links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+.email-line {
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
 }
 
-.email-row,
-.links-row {
+.email-line a {
+  color: var(--text);
+  font-weight: 500;
+  border-bottom: 1px solid var(--border);
+}
+
+.email-line a:hover {
+  color: var(--link);
+  border-bottom-color: var(--link);
+  text-decoration: none;
+}
+
+.social-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
@@ -99,11 +110,6 @@ h1 span {
   border-radius: 6px;
   text-decoration: none;
   transition: all 0.15s ease;
-}
-
-.email-btn {
-  font-family: monospace;
-  font-size: 0.9rem;
 }
 
 .btn:hover {
@@ -255,12 +261,6 @@ footer p {
   }
 
   .social-links {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .email-row,
-  .links-row {
     justify-content: center;
   }
 
