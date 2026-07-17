@@ -304,19 +304,11 @@ h3 {
 }
 
 .wip li {
-  position: relative;
-  padding: 0 0 0 1.125rem;
   margin: 0;
+  padding: 0;
   font-size: var(--fs-md);
   line-height: 1.45;
   border: none;
-}
-
-.wip li::before {
-  content: "–";
-  position: absolute;
-  left: 0;
-  color: var(--text-muted);
 }
 
 .wip li strong {
